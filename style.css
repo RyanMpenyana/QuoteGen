@@ -3,7 +3,8 @@
 *{
     margin: 0%;
     padding: 0%;
-    box-sizing: border-box;    
+    box-sizing: border-box;   
+    
 }
 
 .container {
@@ -13,14 +14,15 @@
     background-repeat: no-repeat;
     min-height: 100vh;
     width: 100%;
-    color : #000;
+    color : #0D0C0C;
     font-family: Montserrat, sans-serif; 
     font-weight: 550;
     text-align: center;
     display: flex;
     align-items: center;
-  
+    z-index: 1;
     justify-content: center;
+    transition: .5s ease-in;
 }
 .quote-container{
     display: inline-block;
@@ -29,12 +31,12 @@
     border-radius:15px;
     box-shadow: 5px 10px 10px 10px rgba(240, 240, 240, 0.7);
     background-color: rgba(240, 240, 240, 0.116);
-    width: auto;
+    width: 100%;
     max-width: 900px;
     backdrop-filter: blur(10px);
 }
 .quote-text{
-    font-size: 2rem
+    font-size: 2rem;
 }
 .long-quote{
     font-size: 1rem;
@@ -78,6 +80,7 @@ button:active{
 }
 .LinkedIn-button{
     font-size: 1.5rem;
+
 }
 @media screen and (max-width : 1000px) {
     .quote-container{
